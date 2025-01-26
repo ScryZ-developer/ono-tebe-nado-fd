@@ -10,6 +10,7 @@
   display: flex;
   gap: 32px;
   white-space: nowrap;
+  line-height: 21px;
 }
 
 .header__links-list-item {
@@ -63,8 +64,7 @@
 /* Блок для затемнения */
 .overlay {
   position: absolute;
-  top: 0;
-  left: 0;
+  inset: 0;
   width: 100%;
   min-height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
@@ -92,11 +92,12 @@
 
 .aligned-text {
   display: block;
+  text-transform: uppercase;
 }
 
 .text_center {
   text-align: center;
-  margin-left: 25px;
+  margin-left: 30px;
 }
 
 .text_right {
@@ -153,6 +154,7 @@
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
+  gap: 25px;
 }
 
 .lots__card-list-item {
@@ -175,18 +177,20 @@
   height: 100%;
   color: #fff;
   z-index: 1;
+  background-size: cover;
+  background-position: center;
 }
 
 .card_type_film {
-  background: url("../images/card-lot-01.jpg") no-repeat center/cover;
+  background-image: url("../images/card-lot-01.jpg");
 }
 
 .card_type_book {
-  background: url("../images/card-lot-02.jpg") no-repeat center/cover;
+  background-image: url("../images/card-lot-02.jpg");
 }
 
 .card_type_picture {
-  background: url("../images/card-lot-03.jpg") no-repeat center/cover;
+  background-image: url("../images/card-lot-03.jpg");
 }
 
 .card__title {
@@ -209,10 +213,10 @@
 .lots__look-more-link {
   display: block;
   font-size: 20px;
-  line-height: 23px;
-  text-decoration-line: underline;
-  text-underline-position: under;
+  line-height: 24px;
   margin: 30px 0 0 40px;
+  text-underline-position: under;
+  text-decoration-line: underline;
 }
 
 .about {
@@ -256,6 +260,7 @@
 
 .about__column-text {
   display: flex;
+  padding-right: 3px;
   font-weight: 400;
   flex-direction: column;
   font-size: 20px;
@@ -267,7 +272,7 @@
 .footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  padding: 180px 50px 0 50px;
+  padding: 180px 50px 82px 50px;
 }
 
 .footer__address {
